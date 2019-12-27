@@ -26,7 +26,7 @@ validint()
 	
 	#  Check for nondigit characters.
 	if [ ! -z $nodigits ] ; then
-		echo "Invalid number format ! ONly Digits, no commas, spaces, etc." >&2
+		echo "Invalid number format ! Only Digits, no commas, spaces, etc." >&2
 		return 1
 	fi
 	
@@ -48,6 +48,6 @@ validint()
 }
 
 #input validation
-if validint "$1" "$2" "$3" ; then
-	echo "Input is valid integer within your constraints."
-fi
+#if validint "$1" "$2" "$3" ; then
+#	echo "Input is valid integer within your constraints."
+#fi
